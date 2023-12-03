@@ -1,0 +1,236 @@
+.home-container{
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.header h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.topNav{
+    display: flex;
+    list-style: none;
+}
+
+.topNav li{
+    margin: 30px;
+}
+
+.topNav li a{
+    text-decoration: none;
+    color: black;
+}
+.container1{
+    display: flex;
+}
+
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 550px;
+    background-color: #f6e6d1;
+}
+
+#box1{
+    background: url("https://colliers-and-co.com/uploads/2023/01/colliers-en-acier-inoxydable-avec-trefle_description-1.jpg");
+    background-size: cover;
+}
+
+#box2{
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_commander{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.btn_commander:hover {
+    background-color: #f6e6d1;
+    color: black; 
+  }
+
+.content{
+    display: none;
+}
+
+.content.active{
+    display: block;
+    width: 100%;
+}
+
+.container2{
+    display: flex;
+}
+
+.choiceBijoux{
+    /* text-align: center; */
+}
+
+.choice_container{
+    background-color: #f6e6d1;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box3{
+    font-size: 50px;
+    outline: none;
+    cursor: pointer;
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+}
+
+.box3::before{
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+    opacity: 0; 
+    transition: opacity 0.3s; 
+}
+
+.box3:hover::before{
+    opacity: 1;
+}
+
+#btn_bracelet{
+    background: url("https://ringconcierge.com/cdn/shop/files/RingConcierge_Web_Bracelets_HeroDesktop_2000x.jpg?v=1689947043");
+    background-size: cover;
+}
+
+#btn_collier{
+    background: url("https://cdn.shopify.com/s/files/1/0620/7815/6999/files/45.webp?v=1686211199");
+    background-size: cover;
+}
+
+.box4{
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+}
+
+label{
+    position: relative;
+    cursor: pointer;
+}
+
+.option-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+label img {
+    width: 250px; /* Ajustez la taille de l'image selon vos besoins */
+    height: auto;
+    border: 2px solid transparent; /* Bordure initialement transparente */
+    transition: border-color 0.3s; /* Transition pour un effet visuel */
+}
+
+
+.checkboxImage {
+    display: none;
+  }
+
+
+input[type="radio"]:checked + label img {
+    border-color: #3498db; /* Couleur de bordure lorsque l'option est sélectionnée */
+  }
+
+.taille_bracelet{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #111;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 0px 20px 0px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+.socialIcons a:hover i{
+    color: black;
+    transition: 0.3s;
+}
+
+.footerNav{
+    margin: 10px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.3em;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+}
